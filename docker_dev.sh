@@ -1,0 +1,1 @@
+docker run --rm -it -e "JEKYLL_ENV=docker"   --volume="$PWD:/srv/jekyll"   --volume="$PWD/.bundle:/usr/local/bundle"   -p 4001:4001 jekyll/jekyll:latest   jekyll serve -P 4001 --config  _config.yml,_config.docker.yml -l --force_polling
